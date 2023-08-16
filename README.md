@@ -2,6 +2,8 @@
 
 ## About
 
+## what is simple Shell?
+
 - This is a project about the Linux command line interpreter which is the Shell. The shell provides an interface for the user to interact with the kernel and excute programs known as the commands. An example is if the user types in cd, the cd command will be executed.
 
 - This is basically creating our own shell for use.
