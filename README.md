@@ -42,4 +42,5 @@
 	* write (man 2 write)
 
 ## Description
+## to run use : gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 - AUTHORS - It is a list of contributors to this simple shell project.
