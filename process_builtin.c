@@ -17,7 +17,7 @@ int builtin_cmd(char **args, char **env)
 	{
 		if (args[1] == NULL)
 		{
-			chdir(getenv("HOME"));
+			chdir(_getenv("HOME"));
 		}
 		else
 		{
