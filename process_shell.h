@@ -9,6 +9,8 @@
 #include <stdbool.h>
 #include <sys/stat.h>
 
+extern char **environ;
+
 int _putchar(char c);
 int _printst(char *str);
 void process_exe(char **args, char **env);
@@ -17,5 +19,6 @@ int builtin_cmd(char **args, char **env);
 void free_args(char **args);
 void _env(char **env);
 char *_getenv(const char *name);
+void handle_comment(char *str);
 
 #endif
