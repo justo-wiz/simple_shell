@@ -1,7 +1,7 @@
 #include "process_shell.h"
 
 /**
- * process_exe - Executes commands
+ * process_exe - Executes the commands
  * @args: arguments
  * @env: enviornmetal variable
  * @args: input
