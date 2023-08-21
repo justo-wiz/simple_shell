@@ -1,10 +1,10 @@
 #include "process_shell.h"
 /**
- * main - Entry point
- * @ad: Count of arguments
- * @argv: Arguments
+ * main - Beginning of the program.
+ * @ad: Command line args count
+ * @argv: Argument vector
  * @env: Environmental variables
- * Return: 0 Always success
+ * Return: 0 on success
  */
 int main(int ad, char **argv, char **env)
 {
