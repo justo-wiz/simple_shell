@@ -1,9 +1,9 @@
 #include "process_shell.h"
 
 /**
- * process_loc - Entry point
+ * process_loc - Entry point of the process
  * @cmd: command
- * Return: 0 Always success
+ * Return: 0 on success
  */
 
 char *process_loc(char *cmd)
