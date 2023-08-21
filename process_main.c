@@ -24,9 +24,12 @@ int main(int ad, char **argv, char **env)
 		r_char = getline(&lnptr, &siz, stdin);
 		if (r_char == -1)
 		{
-			_printst("\n");
-			free(lnptr);
-			exit(0);
+			if (feof(stdin))
+			{
+				_printst("\n");
+				free(lnptr);
+				exit(0);
+			}
 		}
 		handle_comment(lnptr);
 		p_id = strstr(lnptr, "$$");
