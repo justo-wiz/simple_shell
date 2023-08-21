@@ -11,13 +11,13 @@ int builtin_cmd(char **args, char **env)
 	{
 		_printst("\n");
 		free_args(args);
-		exit(0);
+		exit(98);
 	}
 	else if (strcmp(args[0], "cd") == 0)
 	{
 		if (args[1] == NULL)
 		{
-			chdir(getenv("HOME"));
+			chdir(_getenv("HOME"));
 		}
 		else
 		{

@@ -12,7 +12,7 @@ char *process_loc(char *cmd)
 	int cmd_length, dir_length;
 	struct stat buffer;
 
-	path = getenv("PATH");
+	path = _getenv("PATH");
 
 	if (path)
 	{
