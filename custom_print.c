@@ -1,9 +1,9 @@
 #include "process_shell.h"
 
 /**
- * _putchar - Entry Point
- * @c: input
- * Return: c
+ * _putchar - puts a character
+ * @c: the character to input
+ * Return: returns the character c
  */
 int _putchar(char c)
 {
