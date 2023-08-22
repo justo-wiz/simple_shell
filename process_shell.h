@@ -20,5 +20,4 @@ void free_args(char **args);
 void _env(char **env);
 char *_getenv(const char *name);
 void handle_comment(char *str);
-
 #endif
