@@ -1,6 +1,6 @@
 #include "process_shell.h"
 /**
- * builtin_cmd - Entry Point
+ * builtin_cmd - inbuilt commands
  * @args: input
  * @env: environmental variable
  * Return: 0 Always
