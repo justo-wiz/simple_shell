@@ -1,8 +1,8 @@
 #include "process_shell.h"
 /**
- * _getenv - Entry point
- * @name: name of the environ variable
- * Return: returing NULL
+ * _getenv - gets the enviroment
+ * @name: name of the environmental variable
+ * Return: returns NULL
  */
 
 char *_getenv(const char *name)
