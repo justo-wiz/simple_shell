@@ -1,8 +1,9 @@
 #include "process_shell.h"
 
 /**
- * handle_comment - Entry point
- * @str: input
+ * handle_comment - handles comment.
+ * @str: string inputed.
+ * Return: nothing.
  */
 
 void handle_comment(char *str)
