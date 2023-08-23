@@ -4,7 +4,8 @@
  * process_exe - Executes the commands
  * @args: arguments
  * @env: enviornmetal variable
- * @args: input
+ *
+ * Return: void.
  */
 
 void process_exe(char **args, char **env)
