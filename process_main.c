@@ -1,21 +1,23 @@
 #include "process_shell.h"
+
 /**
  * main - Beginning of the program.
  * @ad: Command line args count
  * @argv: Argument vector
  * @env: Environmental variables
+ *
  * Return: 0 on success
  */
 int main(int ad, char **argv, char **env)
 {
-	char *lnptr = NULL, *lnptr_cpy = NULL, *tken, **args, *prompt = "$ ", *p_id;
+	char *lnptr = NULL, *lnptr_cpy = NULL, *tken, *prompt = "$ ", *p_id;
+	char **args;
 	size_t siz = 0;
 	ssize_t r_char;
 	const char *delim = " \n";
 	int x, md = isatty(0), n_tokens = 0;
 	pid_t ppid;
-	(void)ad;
-	(void)argv;
+	(void)ad, (void)argv;
 
 	while (1)
 	{
@@ -36,19 +38,15 @@ int main(int ad, char **argv, char **env)
 		if (p_id != NULL)
 		{
 			ppid = getppid();
-			printf("%u\n", ppid);
+			_write(ppid);
 		}
-		/* args = split_ln(lnptr);*/
-
-		/* lnptr_cpy = malloc(sizeof(char) * (r_char +1)); */
 		lnptr_cpy = strdup(lnptr);
 		if (lnptr_cpy == NULL)
 		{
-			perror("Ooops! Memomry alloc Error!");
+			perror("Ooops! Memory alloc Error!");
 			free(lnptr_cpy);
 			exit(0);
 		}
-		/* strcpy(lnptr_cpy, lnptr);*/
 		tken = strtok(lnptr, delim);
 		while (tken != NULL)
 		{
@@ -66,8 +64,6 @@ int main(int ad, char **argv, char **env)
 		}
 		process_exe(args, env);
 	}
-	free(lnptr_cpy);
-	free(lnptr);
-	free_args(args);
+	free(lnptr_cpy), free(lnptr), free_args(args);
 	return (0);
 }
