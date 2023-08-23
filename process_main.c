@@ -36,7 +36,7 @@ int main(int ad, char **argv, char **env)
 		if (p_id != NULL)
 		{
 			ppid = getppid();
-			printf("%u\n", ppid);
+			write(ppid);
 		}
 		lnptr_cpy = strdup(lnptr);
 		if (lnptr_cpy == NULL)
