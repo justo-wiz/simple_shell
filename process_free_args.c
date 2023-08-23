@@ -1,8 +1,9 @@
 #include "process_shell.h"
 /**
  * free_args - frees an array of strings
- * @args: Array of strings
- * Return: Always void
+ * @args: the array of strings to free
+ *
+ * Return: void
  */
 
 void free_args(char **args)
