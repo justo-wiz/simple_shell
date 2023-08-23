@@ -38,9 +38,6 @@ int main(int ad, char **argv, char **env)
 			ppid = getppid();
 			printf("%u\n", ppid);
 		}
-		/* args = split_ln(lnptr);*/
-
-		/* lnptr_cpy = malloc(sizeof(char) * (r_char +1)); */
 		lnptr_cpy = strdup(lnptr);
 		if (lnptr_cpy == NULL)
 		{
@@ -48,7 +45,6 @@ int main(int ad, char **argv, char **env)
 			free(lnptr_cpy);
 			exit(0);
 		}
-		/* strcpy(lnptr_cpy, lnptr);*/
 		tken = strtok(lnptr, delim);
 		while (tken != NULL)
 		{
