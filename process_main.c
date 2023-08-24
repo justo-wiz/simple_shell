@@ -1,17 +1,14 @@
 #include "process_shell.h"
-
 /**
  * main - beginning of the program.
  * @ad: command line args count
  * @argv: argument vector
  * @env: environmental variables
- *
  * Return: 0 on success
  */
 int main(int ad, char **argv, char **env)
 {
-	char *lnptr = NULL, *lnptr_cpy = NULL, *tken, *prompt = "$ ", *p_id;
-	char **args;
+	char *lnptr = NULL, *lnptr_cpy = NULL, *tken, *prompt = "$ ", *p_id, **argvs;
 	size_t siz = 0;
 	ssize_t r_char;
 	const char *delim = " \n";
